@@ -32,4 +32,70 @@ body {
 
 table {
   width: 90%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+
+thead {
+  border-radius: 10px;
+}
+
+thead th {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+th,
+td {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+thead tr {
+  background-color: teal;
+  color: white;
+  text-align: left;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: rgb(228, 228, 228);
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid teal;
+}
+
+tbody {
+  min-height: 100%;
+}
+
+.action-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4px;
+}
+
+.update-button {
+  background-color: rgb(65, 65, 215);
+  color: white;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+}
+
+.button-action {
+  box-shadow: none;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: none;
 }
